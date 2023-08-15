@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Tasbih</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="./tasbih2.jpg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <h1 class="h-14 text-5xl font-black text-center my-10 bg-gradient-to-r from-blue-500 to-green-500 text-transparent bg-clip-text">Digital Taasbih</h1>
+  </header>
+  <main>
+    <section class="text-white grid grid-cols-1 md:grid-cols-4 mx-10 gap-5 my-10">
+      <!-- Subhan Allah Part -->
+      <div class="card bg-gray-500 shadow-xl">
+        <figure class="px-10 pt-10">
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-2xl">Subhan Allah</h2>
+          <p id="subhanallah-count" class="text-2xl">0</p>
+          <div class="card-actions">
+            <button id="subhanallah-increment" class="btn bg-green-500 text-white border-none">Increment</button>
+            <button id="subhanallah-decrement" class="btn bg-red-500 text-white border-none">Decrement</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alhamdulillah  part-->
+      <div class="card bg-gray-500 shadow-xl">
+        <figure class="px-10 pt-10">
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-2xl">Alhamdulillah</h2>
+          <p id="alhamdulillah-count" class="text-2xl">0</p>
+          <div class="card-actions">
+            <button id="alhamdulillah-increment" class="btn bg-green-500 text-white border-none">Increment</button>
+            <button id="alhamdulillah-decrement" class="btn bg-red-500 text-white border-none">Decrement</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- La Ilaha Illallah Part -->
+      <div class="card bg-gray-500 shadow-xl">
+        <figure class="px-10 pt-10">
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-2xl">La Ilaha Illallah</h2>
+          <p id="lailahaillallah-count" class="text-2xl">0</p>
+          <div class="card-actions">
+            <button id="lailahaillallah-increment" class="btn bg-green-500 text-white border-none">Increment</button>
+            <button id="lailahaillallah-decrement" class="btn bg-red-500 text-white border-none">Decrement</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Allah hu akbar part -->
+      <div class="card bg-gray-500 shadow-xl">
+        <figure class="px-10 pt-10">
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-2xl">Allah Hu Akbar</h2>
+          <p id="allahhuakbar-count" class="text-2xl">0</p>
+          <div class="card-actions align-middle">
+            <button id="allahhuakbar-increment" class="btn bg-green-500 text-white border-none">Increment</button>
+            <button id="allahhuakbar-decrement" class="btn bg-red-500 text-white border-none">Decrement</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="text-center mb-7">
+    <button id="reset-btn" type="reset" class="btn bg-gray-500 text-white">RESET ALL RECORDS</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
